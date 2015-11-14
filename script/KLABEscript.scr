@@ -1,0 +1,10 @@
+#$ -S /bin/bash
+cd $TMPDIR
+
+source /data/snoplus/softwareSL6/env_rat-5.2.0.sh
+
+rat -l /data/liggins/year1/memoryLeaks/logs/klabeLog.log /data/liggins/year1/memoryLeaks/macs/klabeScript.mac 
+
+cp *.root /data/liggins/year1/memoryLeaks/data
+
+echo  Job Myjob Done

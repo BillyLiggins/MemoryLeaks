@@ -1,0 +1,8 @@
+#$ -S /bin/bash
+cd $TMPDIR
+source /data/snoplus/softwareSL6/env_rat-5.2.0.sh
+
+rat -l /data/liggins/Myjob.log /data/liggins/SimpleBatch/mac/Myjob.mac
+
+cp snoplus_electrons_labppo.root /data/liggins/SimpleBatch/root/
+echo  Job Myjob Done
