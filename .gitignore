@@ -1,2 +1,5 @@
 *.scr.e*
 *.scr.o*
+data/
+logs/
+
