@@ -2,4 +2,6 @@
 *.scr.o*
 data/
 logs/
-
+script/
+*.sw
+macs/
