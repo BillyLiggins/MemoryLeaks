@@ -1,5 +1,8 @@
 import matplotlib.pyplot as plt
+
 import pylab
+
+fig=plt.figure()
 
 
 data = pylab.loadtxt("memoryData.dat")
