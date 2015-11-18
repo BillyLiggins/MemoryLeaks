@@ -33,7 +33,6 @@ def trackMemory(pid,memoryDatefile,timestep):
                                         
                     if 'str' in line:
                             break
-            print "You have finished the loop"
         memoryDatefile.write("\n")
         memoryDatefile.flush()
         time.sleep(timestep)
@@ -44,6 +43,6 @@ if __name__=="__main__":
     pid=getPID()
     print "len of PID ", len(pid)
     memoryDatefile=open("memoryData.dat","w")
-    trackMemory(pid,memoryDatefile,5*60)
+    trackMemory(pid,memoryDatefile,30)
     memoryDatefile.close()
 
